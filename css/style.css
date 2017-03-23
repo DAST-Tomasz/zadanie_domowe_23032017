@@ -1,0 +1,88 @@
+/* style generalne - start */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Verdana', sans-serif;
+    color: white;
+}
+
+
+/* style generalne - stop */
+
+
+/* naglowek img, napis - start */
+
+#main-header {
+    background-image: url(../obrazy/man-1.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+}
+
+#main-header .header-caption {
+    text-transform: uppercase;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 3%;
+    right: 0;
+    position: absolute;
+}
+
+h1 {
+        font-size: 2em;
+    }
+    
+h2 {
+        font-size: 1.5em;
+    }
+
+/* naglowek img, napis - stop */
+
+
+/* style rwd - wedlug wytycznych - start */
+
+@media (max-width: 1170px) {
+    
+    #main-header {
+        background-image: url(../obrazy/man-2.jpg);
+        height: 70vh;
+    }
+    
+    #main-header .header-caption {
+        top: 10%;
+        transform: translateY(-10%);
+        left: 55%;
+    }
+    
+    h1 {
+        font-size: 1.8em;
+    }
+    
+    h2 {
+        font-size: 1.3em;
+    }
+    
+}
+
+@media (max-width: 992px) {
+    
+    #main-header {
+        background-image: url(../obrazy/man-1.jpg);
+        height: 50vh;
+    }
+    
+    #main-header .header-caption {
+        top: 105%;
+        color: black;
+        left: 0;
+        right: 0;
+        text-align: center;
+    }
+    
+}
+ /* style rwd - wedlug wytycznych - stop */
